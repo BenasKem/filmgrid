@@ -1,0 +1,15 @@
+{
+  "name": "filmstack",
+  "version": "1.0.0",
+  "description": "app to show my film grid",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://benaskem.github.io/filmgrid",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

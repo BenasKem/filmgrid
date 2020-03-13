@@ -1,0 +1,49 @@
+/* import of font */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+body {
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-family: 'Noto Sans', sans-serif, Arial, Helvetica;  
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    align-self: center;
+    color:teal;
+    text-align: center;
+}
+
+.photo{
+    /* basically tells that its going to be a flex content container */
+    display: flex; 
+    flex-direction: column; /* basically going down as a column */
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-size: 3rem;
+    color: white;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms; /* transition time of the animation*/
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-position: no-repeat;
+}
+.photo:hover{
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.05);
+}
+
+.photo-grid a{
+    transition: all 500ms;
+}

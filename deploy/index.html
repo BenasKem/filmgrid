@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmGrid</title>
+    <link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+   
+    <style>
+        @import url(./css/base.css);
+        @import url(./css/photo-grid.css);
+    </style>
+</head>
+<body>
+    
+    <h1>Welcome to FilmGrid</h1>
+    <h3>All the photos are taken using 35mm film</h3>
+
+    <div class="photo-grid">
+        <a class="photo photo-tall photo-wide"  data-lightbox="example" style = "background-image:url(./images/bokstas.jpg)" href="./images/bokstas.jpg"></a>
+        <a class="photo photo-tall photo-wide"  data-lightbox="example" style = "background-image:url(./images/bokstas.jpg)" href="./images/bokstas.jpg"></a>
+        <a class="photo photo-tall photo-wide"  data-lightbox="example" style = "background-image:url(./images/bokstas.jpg)" href="./images/bokstas.jpg"></a>
+        <a class="photo photo-tall photo-wide"  data-lightbox="example" style = "background-image:url(./images/bokstas.jpg)" href="./images/bokstas.jpg"></a>
+    </div>
+
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        lightbox.option({
+      'resizeDuration': 300,
+      'fadeDuration': 300,
+      'imageFadeDuration': 30,
+      'wrapAround': false,
+    })
+    </script>
+</body>
+</html>

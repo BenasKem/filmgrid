@@ -1,0 +1,18 @@
+.photo-grid{
+    /* this does the magic */
+    display: grid;
+    gap:1.5rem;
+    
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+}
+
+@media screen and (min-width: 600px) {
+    .photo-tall {
+      grid-row: span 2 / auto;
+    }
+  
+    .photo-wide {
+      grid-column: span 2 / auto;
+    }
+  }
